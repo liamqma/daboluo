@@ -344,10 +344,6 @@ function luoYang() {
     choosePeople(2);
     // 点击买卖
     clickOnButtonUnderTheDialog();
-    // 点击：调料
-    chooseBuyItem(1)
-    increaseBuyingItemCount(5);
-    buy();
     // 点击：辣椒
     chooseBuyItem(3)
     increaseBuyingItemCount(5);
@@ -1122,16 +1118,6 @@ function youZhou() {
     down(2)
     left(10)
     up()
-    
-    // 点击: 菜贩
-    choosePeople(2);
-    // 点击: 买卖
-    clickOnButtonUnderTheDialog();
-    // 点击：豆腐
-    chooseBuyItem(4)
-    increaseBuyingItemCount(5);
-    buy();
-    exitShop();
 }
 
 shiFangJi();

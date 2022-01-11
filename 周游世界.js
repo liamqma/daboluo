@@ -102,18 +102,6 @@ function shiFangJi() {
 
     exitShop();
 
-    // 去宝掌柜
-    click(726, 493);
-    sleep(1000);
-    choosePeople(2);
-    clickOnButtonUnderTheDialog();
-
-    // 点击第4个物品：捕兽夹
-    chooseBuyItem(4);
-    increaseBuyingItemCount(1);
-    buy();
-    exitShop();
-
     // 去敦煌
     click(1544, 855);
     sleep(2000);
@@ -176,16 +164,6 @@ function luoXiaZhen() {
     sleep(2000);
     click(939, 701);
     sleep(2000);
-    
-    // 王掌柜
-    choosePeople(2);
-    clickOnButtonUnderTheDialog();
-    
-    // 点击第4个物品：捕兽夹
-    chooseBuyItem(5);
-    increaseBuyingItemCount(1);
-    buy();
-    exitShop();
     
     // 到药店
     click(1492, 724);
@@ -441,16 +419,6 @@ function shuangWangZhen() {
     down(8);
     left(1);
     sleep(2000);
-    
-    // 点击: 伙计
-    choosePeople(2);
-    // 点击买卖
-    clickOnButtonUnderTheDialog();
-    // 点击：捕兽夹
-    chooseBuyItem(6)
-    increaseBuyingItemCount(3);
-    buy();
-    exitShop();
     
     right();
     down(3);

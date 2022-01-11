@@ -90,16 +90,6 @@ function shiFangJi() {
     // 点击买卖
     clickOnButtonUnderTheDialog();
 
-    // // 点击第一个物品：止血散
-    // chooseBuyItem(1)
-    // increaseBuyingItemCount(3);
-    // buy();
-
-    // // 点击第二个物品：金创药
-    // chooseBuyItem(2);
-    // increaseBuyingItemCount(3);
-    // buy();
-
     // 点击第3个物品：甘草
     chooseBuyItem(3);
     increaseBuyingItemCount();
@@ -208,11 +198,6 @@ function luoXiaZhen() {
     // 点击买卖
     clickOnButtonUnderTheDialog();
     
-    // // 点击第一个物品：止血散
-    // chooseBuyItem(1)
-    // increaseBuyingItemCount(3);
-    // buy();
-    
     // 甘草
     chooseBuyItem(3);
     increaseBuyingItemCount(10);
@@ -255,10 +240,6 @@ function luoYang() {
     choosePeople(2);
     // 点击买卖
     clickOnButtonUnderTheDialog();
-    // // 点击：跌打药
-    // chooseBuyItem(1)
-    // increaseBuyingItemCount(3);
-    // buy();
     // 甘草
     chooseBuyItem(3);
     increaseBuyingItemCount(10);
@@ -441,10 +422,6 @@ function nanYangDu() {
     choosePeople(2);
     // 点击买卖
     clickOnButtonUnderTheDialog();
-    // // 点击：跌打药
-    // chooseBuyItem(1)
-    // increaseBuyingItemCount(3);
-    // buy();
     // 甘草
     chooseBuyItem(2);
     increaseBuyingItemCount(10);
@@ -554,14 +531,6 @@ function fengMingJi() {
     choosePeople(2);
     // 点击买卖
     clickOnButtonUnderTheDialog();
-    // // 点击：跌打药
-    // chooseBuyItem(1)
-    // increaseBuyingItemCount(3);
-    // buy();
-    // // 点击：止血散
-    // chooseBuyItem(2)
-    // increaseBuyingItemCount(3);
-    // buy();
     // 点击：甘草
     chooseBuyItem(3)
     increaseBuyingItemCount(10);
@@ -608,10 +577,6 @@ function chenDu() {
     choosePeople(2);
     // 点击买卖
     clickOnButtonUnderTheDialog();
-    // // 点击：止血散
-    // chooseBuyItem(2)
-    // increaseBuyingItemCount(3);
-    // buy();
     // 点击：甘草
     chooseBuyItem(3)
     increaseBuyingItemCount(10);
@@ -732,14 +697,6 @@ function hangZhou() {
     choosePeople(2);
     // 点击: 买卖
     clickOnButtonUnderTheDialog();
-    // // 点击：止血散
-    // chooseBuyItem(1)
-    // increaseBuyingItemCount(3);
-    // buy();
-    // // 点击：金创药
-    // chooseBuyItem(2)
-    // increaseBuyingItemCount(3);
-    // buy();
     // 点击：甘草
     chooseBuyItem(3)
     increaseBuyingItemCount(10);
@@ -888,10 +845,6 @@ function guSu() {
     choosePeople(2);
     // 点击: 买卖
     clickOnButtonUnderTheDialog();
-    // // 点击：金创药
-    // chooseBuyItem(1)
-    // increaseBuyingItemCount(2);
-    // buy();
     // 点击：甘草
     chooseBuyItem(2)
     increaseBuyingItemCount(10);
@@ -1133,14 +1086,6 @@ function youZhou() {
     choosePeople(2);
     // 点击: 买卖
     clickOnButtonUnderTheDialog();
-    // // 点击：止血散
-    // chooseBuyItem(1)
-    // increaseBuyingItemCount(3);
-    // buy();
-    // // 点击：金创药
-    // chooseBuyItem(2)
-    // increaseBuyingItemCount(3);
-    // buy();
     // 点击：甘草
     chooseBuyItem(3)
     increaseBuyingItemCount(10);

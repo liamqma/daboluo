@@ -1099,25 +1099,6 @@ function youZhou() {
     right()
     up(7)
     left()
-    
-    // 点击: 周掌柜
-    choosePeople(2);
-    // 点击: 买卖
-    clickOnButtonUnderTheDialog();
-    // 点击：捕兽夹
-    chooseBuyItem(4)
-    increaseBuyingItemCount(1);
-    buy();
-    // 点击：青竹鱼竿
-    chooseBuyItem(7)
-    increaseBuyingItemCount(2);
-    buy();
-    exitShop();
-    
-    right()
-    down(2)
-    left(10)
-    up()
 }
 
 shiFangJi();

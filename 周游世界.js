@@ -385,14 +385,6 @@ function nanYangDu() {
     choosePeople(2);
     // 点击买卖
     clickOnButtonUnderTheDialog();
-    // 点击：捕兽夹
-    chooseBuyItem(6)
-    increaseBuyingItemCount(1);
-    buy();
-    // 点击：青竹鱼竿
-    chooseBuyItem(7);
-    increaseBuyingItemCount(2);
-    buy();
     // 点击：鱼饵
     chooseBuyItem(8);
     increaseBuyingItemCount(1);

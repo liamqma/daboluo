@@ -278,7 +278,7 @@ function luoYang() {
     right(2);
 
     function wuGuan() {
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 2; i++) {
             // 点击常四海
             choosePeople(2);
             // 点击切磋
@@ -1059,6 +1059,52 @@ function youZhou() {
     right()
     up(7)
     left()
+
+    // 到周掌柜了
+    right(5)
+    up(3)
+    right()
+    up()
+    right()
+
+    // 点击: 地牢入口
+    choosePeople(2);
+    sleep(5000)
+
+    // 到地牢了
+    left(6)
+    up()
+    left()
+
+    // 点击: 狱卒
+    choosePeople(2);
+    // 点击：笼斗
+    clickOnButtonUnderTheDialog();
+    // 点击：参与笼斗
+    clickOnButtonUnderTheDialog();
+    // 点击：对战囚徒
+    clickOnButtonUnderTheDialog();
+    clickCenter()
+    sleep(3000)
+    clickCenter()
+    sleep(3000)
+
+    right(2)
+    down(3)
+    sleep(3000)
+     // 点击：开锁
+    clickOnButtonUnderTheDialog();  
+    sleep(3000)
+
+    down(2)
+    right(2)
+    down(2)
+    left()
+
+    // 点击: 玩家
+    choosePeople(2);
+    // 点击：笼斗
+    clickOnButtonUnderTheDialog();
 }
 
 shiFangJi();

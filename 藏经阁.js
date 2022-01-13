@@ -64,7 +64,9 @@ sleep(2000)
 
 // 点击：搜索书架
 clickOnButtonUnderTheDialog(1)
-sleep(25000)
+sleep(40000)
+
+toast("书读完了")
 
 click(600, 609)
 sleep(2000)

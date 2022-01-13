@@ -66,6 +66,7 @@ choosePeople(2);
 // 点击：送镖
 clickOnButtonUnderTheDialog();
 clickCenter();
+sleep(2000)
 
 right(9)
 up(8)

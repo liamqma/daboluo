@@ -3,7 +3,6 @@ if(!requestScreenCapture()){
     exit();
 }
 
-var imgMark = images.read("mark.jpeg");
 var imgBar = images.read("bar.jpeg");
 
 function clickOnFire() {
@@ -16,17 +15,30 @@ function shanHuo() {
 
     for(var i=0; i<= 40; i++) {
         var screenshot = captureScreen();
-        var pMark = findImage(screenshot, imgMark, { region: [ 780, 770, 120, 60 ], threshold: 0.7 });
         var pBar = findImage(screenshot, imgBar, { region: [ 628, 770, 610, 60 ], threshold: 0.7 });
+        var pMarkX = 825;
     
-        if(pMark && pBar){
-            if(pBar.x - pMark.x < 30) {
-                toast("找到啦:" + pMark + pBar);
-                clickOnFire();
-            }
-        } else {
-            toast("没找到");
+        if(pBar && pBar.x - pMarkX < 30){
+            clickOnFire();
         }
+        sleep(500)
+    }
+}
+
+function cook(firstMarkX) {
+    clickOnFire();
+    sleep(1000);
+    clickOnFire();
+    
+    for(var i=0; i<= 40; i++) {
+        var screenshot = captureScreen();
+        var pBar = findImage(screenshot, imgBar, { region: [ 625, 770, 600, 40 ], threshold: 0.8 });
+        // var firstMarkX = 877;
+    
+        if(pBar && pBar.x - firstMarkX < 30){
+            clickOnFire();
+        }
+        
         sleep(500)
     }
 }
@@ -34,4 +46,5 @@ function shanHuo() {
 module.exports = {
     shanHuo: shanHuo,
     clickOnFire: clickOnFire,
+    cook: cook
 }

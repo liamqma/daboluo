@@ -6,14 +6,18 @@ function start() {
     click(1163, 378)
     sleep(1000)
 
-    click(614, 526)
+    swipe(556, 833, 556, 352, 1000)
+    sleep(2000)
+
+    // 点击：一品豆腐
+    click(740, 808)
     sleep(1000)
 
     // 点击：确认菜谱
     click(1320, 809)
     sleep(1000)
 
-    cook(877);
+    cook(780);
 }
 
 for(var count=1; count<=20; count++) {

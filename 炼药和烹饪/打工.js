@@ -6,7 +6,6 @@ var clickCenter = utils.clickCenter;
 var up = utils.up;
 var down = utils.down;
 var shanHuo = utils2.shanHuo;
-var clickOnFire = utils2.clickOnFire;
 
 for(var count=1; count<=10; count++) {
     // 点击：老郎中

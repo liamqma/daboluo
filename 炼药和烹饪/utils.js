@@ -7,7 +7,7 @@ var imgMark = images.read("mark.jpeg");
 var imgBar = images.read("bar.jpeg");
 
 function clickOnFire() {
-    click(1498, 376);
+    click(1462, 358);
 }
 
 function shanHuo() {

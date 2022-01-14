@@ -1084,10 +1084,11 @@ function youZhou() {
     clickOnButtonUnderTheDialog();
     // 点击：对战囚徒
     clickOnButtonUnderTheDialog();
+    sleep(5000)
     clickCenter()
-    sleep(3000)
+    sleep(8000)
     clickCenter()
-    sleep(3000)
+    sleep(8000)
 
     right(2)
     down(3)

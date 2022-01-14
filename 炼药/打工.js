@@ -13,8 +13,10 @@ for(var count=1; count<=10; count++) {
     choosePeople(2)
     // 点击：打工
     clickOnButtonUnderTheDialog(3)
+    sleep(8000)
     clickCenter();
-    sleep(4000)
+    clickCenter();
+    sleep(2000)
 
     up()
     sleep(2000)

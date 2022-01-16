@@ -1,6 +1,6 @@
 // utils
 var utils = require('../utils');
-var shiFangJiAnQi = require('./十方集暗器.js');
+var shiFangJiAnQi = require('./utils.js');
 var left = utils.left;
 var down = utils.down;
 var up = utils.up;

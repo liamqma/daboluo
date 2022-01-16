@@ -1076,36 +1076,38 @@ function youZhou() {
     up()
     left()
 
-    // 点击: 狱卒
-    choosePeople(2);
-    // 点击：笼斗
-    clickOnButtonUnderTheDialog();
-    // 点击：参与笼斗
-    clickOnButtonUnderTheDialog();
-    // 点击：对战囚徒
-    clickOnButtonUnderTheDialog();
-    sleep(5000)
-    clickCenter()
-    sleep(8000)
-    clickCenter()
-    sleep(8000)
+    // // 点击: 狱卒
+    // choosePeople(2);
+    // // 点击：笼斗
+    // clickOnButtonUnderTheDialog();
+    // sleep(4000)
+    // // 点击：参与笼斗
+    // clickOnButtonUnderTheDialog();
+    // sleep(4000)
+    // // 点击：对战囚徒
+    // clickOnButtonUnderTheDialog();
+    // sleep(5000)
+    // clickCenter()
+    // sleep(8000)
+    // clickCenter()
+    // sleep(8000)
 
-    right(2)
-    down(3)
-    sleep(3000)
-     // 点击：开锁
-    clickOnButtonUnderTheDialog();  
-    sleep(3000)
+    // right(2)
+    // down(3)
+    // sleep(6000)
+    //  // 点击：开锁
+    // clickOnButtonUnderTheDialog();  
+    // sleep(3000)
 
-    down(2)
-    right(2)
-    down(2)
-    left()
+    // down(2)
+    // right(2)
+    // down(2)
+    // left()
 
-    // 点击: 玩家
-    choosePeople(2);
-    // 点击：笼斗
-    clickOnButtonUnderTheDialog();
+    // // 点击: 玩家
+    // choosePeople(2);
+    // // 点击：笼斗
+    // clickOnButtonUnderTheDialog();
 }
 
 shiFangJi();

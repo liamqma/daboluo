@@ -78,7 +78,7 @@ function meiHuaZhuang() {
     // 点击： 训练轻功
     clickOnButtonUnderTheDialog();
     for(let i = 0; i < 20; i++) {
-        press(1248, 522, 1005);
+        press(1248, 522, 1000);
         sleep(2000)
     }
     click(1735, 807);

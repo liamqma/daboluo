@@ -565,6 +565,56 @@ function chenDu() {
     increaseBuyingItemCount(3);
     buy();
     exitShop();
+
+    function fuBen() {
+        left()
+        up()
+        // 点击：董三川
+        choosePeople();
+        // 点击: 天一教
+        clickOnButtonUnderTheDialog();
+        sleep(4000)
+        // 点击：挑战
+        clickOnButtonUnderTheDialog();
+        sleep(4000)
+        clickCenter()
+        sleep(4000)
+        clickCenter()
+        sleep(8000)
+
+        right(3)
+        up()
+        right(6)
+        up()
+        right()
+        sleep(3000)
+        clickCenter()
+        sleep(30000)
+        
+        right(9)
+        up(2)
+        sleep(3000)
+        clickCenter()
+        sleep(120000)
+
+        down(2)
+        left(10)
+        down()
+        left(7)
+        down()
+        left(2)
+        sleep(1000)
+        // 点击：确认
+        clickOnButtonUnderTheDialog();
+        sleep(4000)
+        // 点击：确认离开
+        clickOnButtonUnderTheDialog();
+        sleep(8000)
+
+        right()
+    }
+
+    fuBen()
     
     left(2);
     down();
@@ -728,7 +778,7 @@ function quanZhou() {
         up();
     }
     
-    fuBen();
+    // fuBen();
     
     down();
     left();

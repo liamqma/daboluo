@@ -61,6 +61,7 @@ choosePeople(2);
 // 点击：送镖
 clickOnButtonUnderTheDialog();
 clickCenter();
+sleep(2000)
 
 click(615, 940);
 sleep(2000)
@@ -76,6 +77,7 @@ left()
 up(2)
 left(3)
 down(8)
+sleep(8000)
 
 // 到南岭了
 down()

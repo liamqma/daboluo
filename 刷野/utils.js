@@ -10,6 +10,10 @@ function anQi() {
     click(278, 876)
     sleep(1000)
     click(682, 876)
+    sleep(1000)
+    click(1144, 876)
+    sleep(1000)
+    click(1580, 876)
     sleep(70000)
     toast("战斗结束")
 }

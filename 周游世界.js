@@ -305,28 +305,28 @@ function luoYang() {
     up(3);
     left(1);
     
-    // 点击王屠夫
-    choosePeople(2);
-    // 点击买卖
-    clickOnButtonUnderTheDialog();
-    // 点击：羊肉
-    chooseBuyItem(2)
-    increaseBuyingItemCount(5);
-    buy();
-    exitShop();
+    // // 点击王屠夫
+    // choosePeople(2);
+    // // 点击买卖
+    // clickOnButtonUnderTheDialog();
+    // // 点击：羊肉
+    // chooseBuyItem(2)
+    // increaseBuyingItemCount(5);
+    // buy();
+    // exitShop();
     
     click(974, 488);
     sleep(2000);
     
-    // 点击摊贩
-    choosePeople(2);
-    // 点击买卖
-    clickOnButtonUnderTheDialog();
-    // 点击：辣椒
-    chooseBuyItem(3)
-    increaseBuyingItemCount(5);
-    buy();
-    exitShop();
+    // // 点击摊贩
+    // choosePeople(2);
+    // // 点击买卖
+    // clickOnButtonUnderTheDialog();
+    // // 点击：辣椒
+    // chooseBuyItem(3)
+    // increaseBuyingItemCount(5);
+    // buy();
+    // exitShop();
     
     // 下面是去泰山
     // click(1582, 588);

@@ -570,7 +570,7 @@ function chenDu() {
         left()
         up()
         // 点击：董三川
-        choosePeople();
+        choosePeople(2);
         // 点击: 天一教
         clickOnButtonUnderTheDialog();
         sleep(4000)
@@ -614,7 +614,7 @@ function chenDu() {
         right()
     }
 
-    fuBen()
+    // fuBen()
     
     left(2);
     down();
@@ -778,7 +778,7 @@ function quanZhou() {
         up();
     }
     
-    // fuBen();
+    fuBen();
     
     down();
     left();

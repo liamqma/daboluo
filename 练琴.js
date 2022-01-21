@@ -1,4 +1,4 @@
-for(var count = 0; count < 30; count ++) {
+for(var count = 0; count < 999; count ++) {
     // 点击： 物品
     click(402, 1046);
     sleep(2000)
@@ -16,8 +16,8 @@ for(var count = 0; count < 30; count ++) {
     // 点击：弹奏
     click(713, 882)
     sleep(2000)
-    // 点击: 醉渔唱晚
-    click(459, 405)
+    // 点击: 平沙落雁
+    click(612, 405)
     sleep(300000)
 }
 

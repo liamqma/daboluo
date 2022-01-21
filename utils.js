@@ -85,6 +85,54 @@ function meiHuaZhuang() {
     sleep(2000);
 }
 
+function chengDuFuBen() {
+    // left()
+    // up()
+    // // 点击：董三川
+    // choosePeople(2);
+    // // 点击: 天一教
+    // clickOnButtonUnderTheDialog();
+    // sleep(4000)
+    // // 点击：挑战
+    // clickOnButtonUnderTheDialog();
+    // sleep(4000)
+    // clickCenter()
+    // sleep(4000)
+    // clickCenter()
+    // sleep(8000)
+
+    click(1470, 871)
+    sleep(4000)
+    right(2)
+    up(1)
+    right(1)
+    toast('第一个敌人')
+    // clickCenter()
+    // sleep(30000)
+    
+    right(9)
+    up(2)
+    sleep(3000)
+    toast('第二个敌人')
+    // clickCenter()
+    // sleep(120000)
+
+    down(2)
+    left(10)
+    down()
+    left(7)
+    click(338, 438)
+    sleep(3000)
+    // 点击：确认
+    clickOnButtonUnderTheDialog();
+    sleep(4000)
+    // 点击：确认离开
+    clickOnButtonUnderTheDialog();
+    sleep(8000)
+
+    right()
+}
+
 module.exports = {
     choosePeople: choosePeople,
     clickOnButtonUnderTheDialog: clickOnButtonUnderTheDialog,
@@ -93,5 +141,6 @@ module.exports = {
     left: left,
     right: right,
     clickCenter: clickCenter,
-    meiHuaZhuang: meiHuaZhuang
+    meiHuaZhuang: meiHuaZhuang,
+    chengDuFuBen: chengDuFuBen
 }

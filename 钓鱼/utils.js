@@ -29,7 +29,7 @@ function fishing(imgHooked) {
 
     jinRuDiaoYu();
 
-    for(let i=0; i<= 50; i++) {
+    for(let i=0; i<= 999; i++) {
 
         // 点击：钓鱼
         clickOnFishing();

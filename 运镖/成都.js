@@ -50,6 +50,7 @@ down(7)
 left(20)
 up(4)
 left(10)
+sleep(8000);
 
 // 到成都了
 left(2);

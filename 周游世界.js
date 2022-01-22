@@ -583,7 +583,7 @@ function chengDu() {
     buy();
     exitShop();
 
-    chengDuFuBen();
+    // chengDuFuBen();
     
     left(2);
     down();
@@ -1131,37 +1131,37 @@ function youZhou() {
     clickOnButtonUnderTheDialog();
 }
 
-shiFangJi();
+// shiFangJi();
 
-// 到敦煌了
+// // 到敦煌了
 
-dunHuang();
+// dunHuang();
 
-// 到华山了
+// // 到华山了
 
-huaShan()
+// huaShan()
 
-// 到落霞镇了
+// // 到落霞镇了
 
-luoXiaZhen();
+// luoXiaZhen();
 
-// 到洛阳了
+// // 到洛阳了
 
-luoYang();
+// luoYang();
 
-// 到南阳渡了
+// // 到南阳渡了
 
-nanYangDu();
+// nanYangDu();
 
-// 到双王镇了
+// // 到双王镇了
 
-shuangWangZhen();
+// shuangWangZhen();
 
-// 到凤鸣集了
+// // 到凤鸣集了
 
-fengMingJi();
+// fengMingJi();
 
-// 到成都了
+// // 到成都了
 
 chengDu();
 

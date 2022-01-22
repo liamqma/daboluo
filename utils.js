@@ -86,20 +86,20 @@ function meiHuaZhuang() {
 }
 
 function chengDuFuBen() {
-    // left()
-    // up()
-    // // 点击：董三川
-    // choosePeople(2);
-    // // 点击: 天一教
-    // clickOnButtonUnderTheDialog();
-    // sleep(4000)
-    // // 点击：挑战
-    // clickOnButtonUnderTheDialog();
-    // sleep(4000)
-    // clickCenter()
-    // sleep(4000)
-    // clickCenter()
-    // sleep(8000)
+    left()
+    up()
+    // 点击：董三川
+    choosePeople(2);
+    // 点击: 天一教
+    clickOnButtonUnderTheDialog();
+    sleep(4000)
+    // 点击：挑战
+    clickOnButtonUnderTheDialog();
+    sleep(4000)
+    clickCenter()
+    sleep(4000)
+    clickCenter()
+    sleep(8000)
 
     click(1470, 871)
     sleep(4000)
@@ -107,15 +107,16 @@ function chengDuFuBen() {
     up(1)
     right(1)
     toast('第一个敌人')
-    // clickCenter()
-    // sleep(30000)
+    clickCenter()
+    sleep(30000)
     
     right(9)
     up(2)
     sleep(3000)
     toast('第二个敌人')
-    // clickCenter()
-    // sleep(120000)
+    clickCenter()
+    sleep(120000)
+    toast('第二个敌人结束')
 
     down(2)
     left(10)

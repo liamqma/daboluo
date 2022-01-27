@@ -33,7 +33,32 @@ function start() {
     }
 }
 
+function kuaiSu() {
+    down();
+    sleep(2000)
+
+    for (var count = 0; count < 50; count ++) {
+        down()
+        left(3)
+        sleep(3000)
+
+        click(716, 801)
+        sleep(5000)
+
+        click(1064, 852)
+        sleep(5000)
+
+        click(1384, 384)
+        sleep(5000)
+
+        left(4)
+        up(2)
+        sleep(3000)
+    }
+}
+
 module.exports = {
     start: start,
+    kuaiSu: kuaiSu,
 }
 

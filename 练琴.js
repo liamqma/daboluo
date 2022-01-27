@@ -11,13 +11,13 @@ for(var count = 0; count < 999; count ++) {
     sleep(1000)
 
     // 点击：紫阳琴
-    click(1587, 305)
+    click(938, 389)
     sleep(1000)
     // 点击：弹奏
     click(713, 882)
     sleep(2000)
-    // 点击: 平沙落雁
-    click(612, 405)
+
+    click(632, 405)
     sleep(300000)
 }
 

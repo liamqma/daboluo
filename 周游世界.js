@@ -8,15 +8,13 @@ var choosePeople = utils.choosePeople;
 var clickOnButtonUnderTheDialog = utils.clickOnButtonUnderTheDialog;
 var clickCenter = utils.clickCenter;
 var chengDuFuBen = utils.chengDuFuBen;
-
-// 点击数量增加
-function increaseBuyingItemCount(count) {
-    if (!count) count = 10;
-    for(let i = 0; i < count; i++) {
-        click(1689, 637);
-    }
-    sleep(1000);
-}
+var waitForMapChange = utils.waitForMapChange;
+var youZhou = utils.youZhou;
+var muRen = utils.muRen;
+var increaseBuyingItemCount = utils.increaseBuyingItemCount;
+var chooseBuyItem = utils.chooseBuyItem;
+var exitShop = utils.exitShop;
+var buy = utils.buy;
 
 function increaseWuDaoBuyingItemCount(count) {
     if (!count) count = 10;
@@ -24,57 +22,6 @@ function increaseWuDaoBuyingItemCount(count) {
         click(1689, 594);
     }
     sleep(1000);
-}
-
-
-function chooseBuyItem(number) {
-    switch(number) {
-        case 1:
-            click(527, 336);
-            break;
-        case 2:
-            click(1079, 319);
-            break;
-        case 3:
-            click(633, 492);
-            break;
-        case 4:
-            click(1015, 492);
-            break;
-        case 5:
-            click(527, 644);
-            break;
-        case 6:
-            click(1015, 644);
-            break;
-        case 7:
-            click(527, 814);
-            break;
-        case 8:
-            click(1015, 814);
-            break;
-    }
-    sleep(1000);
-}
-
-function exitShop() {
-    click(1829, 965);
-    sleep(1500);
-}
-
-// 购买
-function buy() {
-    click(1565, 904);
-    sleep(1000);
-}
-
-function muRen() {
-    // 点击木人
-    choosePeople(2);
-    sleep(5000);
-    // 点击练武
-    clickOnButtonUnderTheDialog();
-    sleep(5000);
 }
 
 // 十方集
@@ -252,11 +199,11 @@ function luoYang() {
         // 点击： 确认
         click(958, 700)
         sleep(8000);
-        // 点击：经验丹
-        chooseBuyItem(2)
-        increaseWuDaoBuyingItemCount(3);
-        buy();
-        sleep(8000);
+        // // 点击：经验丹
+        // chooseBuyItem(2)
+        // increaseWuDaoBuyingItemCount(3);
+        // buy();
+        // sleep(8000);
         // 点击： 确认
         click(958, 700)
         sleep(8000);
@@ -293,7 +240,7 @@ function luoYang() {
             clickCenter();
             sleep(5000)
             clickCenter();
-            sleep(45000);
+            sleep(120000);
             toast("武馆结束");
         }
     }
@@ -589,14 +536,118 @@ function chengDu() {
     down();
     left(2);
     up(3);
-    right();
-    up();
+    left()
+    up(2)
+    right()
+    up(8)
+    left(14)
+    click(517, 178)
+    sleep(2000)
+    waitForMapChange();
+    toast("到青城山了")
+}
+
+function qingChengShanDaoDaXueShan() {
+    click(676, 188)
+    sleep(3000)
+    up()
+    left()
+    up()
+    left(10)
+    down(4)
+    left(11)
+    waitForMapChange()
+    toast("到大雪山了了")
+}
+
+function daXueShan() {
+    click(857, 235)
+    sleep(3000)
+    left()
+    up()
+    left()
+    up()
+    left(9)
+    up(2)
+    left(6)
+    up(10)
+    right(3)
+    down(2)
+    right(10)
+    up(2)
+    left()
+    up(2)
+    left()
+    up(6)
+    left()
+
+    toast("点击灵智上师")
+    choosePeople(2)
+    clickOnButtonUnderTheDialog()
+    
+    toast("点击洗髓丹")
+    chooseBuyItem(1)
+    increaseBuyingItemCount(5);
+    buy();
+
+    toast("点击顺脉丹")
+    chooseBuyItem(2)
+    increaseBuyingItemCount(1);
+    buy();
+
+    exitShop();
+
+    right()
+    down(6)
+    right()
+    down(4)
+    left(9)
+    up(2)
+    left(3)
+    down(10)
+    right(6)
+    down(2)
+    right(9)
+    down()
+    right()
+    down()
+    right()
+    down(5)
+    click(1394, 798)
+    sleep(2000)
+    waitForMapChange()
+    toast("到青城山了")
+}
+
+function qingChengShanDaoChengDu() {
+    click(1361, 856)
+    sleep(3000)
+    right(5)
+    up(4)
+    right(10)
+    down()
+    right(3)
+    down(3)
+    click(1053, 952)
+    sleep(2000)
+    waitForMapChange()
+    toast("到成都了")
+}
+
+function chengDuDaoFengMingJi() {
+    click(1413, 812)
+    sleep(3000)
+    right(12)
+    down(8)
+    right()
+    down()
     right(5);
     down(15);
     right(5);
     up(13);
-    right(2);
-    sleep(5000);
+    right(2)
+    waitForMapChange()
+    toast("到凤鸣集了")
 }
 
 function fengMingJiDaoLongQuanZhen() {
@@ -1040,130 +1091,47 @@ function taiShan() {
     sleep(8000)
 }
 
-function youZhou() {
-    up(15)
-    right(7)
-    down(3)
-    left()
-    
-    utils.meiHuaZhuang();
-    
-    right(2)
-    down()
-    
-    muRen();
-    
-    left()
-    up(4)
-    left(8)
-    
-    // 点击: 施必救
-    choosePeople(2);
-    // 点击: 买卖
-    clickOnButtonUnderTheDialog();
-    // 点击：甘草
-    chooseBuyItem(3)
-    increaseBuyingItemCount(10);
-    buy();
-    // 点击：茯苓
-    chooseBuyItem(4)
-    increaseBuyingItemCount(5);
-    buy();
-    // 白芍
-    chooseBuyItem(5)
-    increaseBuyingItemCount(2);
-    buy();
-    exitShop();
-    
-    right()
-    up(7)
-    left()
+shiFangJi();
 
-    // 到周掌柜了
-    right(5)
-    up(3)
-    right()
-    up()
-    right()
+// 到敦煌了
 
-    // 点击: 地牢入口
-    choosePeople(2);
-    sleep(5000)
+dunHuang();
 
-    // 到地牢了
-    left(6)
-    up()
-    left()
+// 到华山了
 
-    // 点击: 狱卒
-    choosePeople(2);
-    // 点击：笼斗
-    clickOnButtonUnderTheDialog();
-    sleep(4000)
-    // 点击：参与笼斗
-    clickOnButtonUnderTheDialog();
-    sleep(4000)
-    // 点击：对战囚徒
-    clickOnButtonUnderTheDialog();
-    sleep(5000)
-    clickCenter()
-    sleep(5000)
-    clickCenter()
-    sleep(8000)
-    clickCenter()
-    sleep(2000)
+huaShan()
 
-    right(2)
-    down(3)
-    sleep(6000)
-     // 点击：开锁
-    clickOnButtonUnderTheDialog();  
-    sleep(3000)
+// 到落霞镇了
 
-    down(2)
-    right(2)
-    down(2)
-    left()
+luoXiaZhen();
 
-    // 点击: 玩家
-    choosePeople(2);
-    // 点击：笼斗
-    clickOnButtonUnderTheDialog();
-}
+// 到洛阳了
 
-// shiFangJi();
+luoYang();
 
-// // 到敦煌了
+toast("到南阳渡了")
 
-// dunHuang();
+nanYangDu();
 
-// // 到华山了
+// 到双王镇了
 
-// huaShan()
+shuangWangZhen();
 
-// // 到落霞镇了
+// 到凤鸣集了
 
-// luoXiaZhen();
+fengMingJi();
 
-// // 到洛阳了
-
-// luoYang();
-
-// // 到南阳渡了
-
-// nanYangDu();
-
-// // 到双王镇了
-
-// shuangWangZhen();
-
-// // 到凤鸣集了
-
-// fengMingJi();
-
-// // 到成都了
+// 到成都了
 
 chengDu();
+
+qingChengShanDaoDaXueShan()
+
+daXueShan();
+
+qingChengShanDaoChengDu()
+
+chengDuDaoFengMingJi()
 
 // 到凤鸣集了
 
@@ -1175,7 +1143,7 @@ fengMingJiDaoLongQuanZhen();
 
 longQuan();
 
-// 到杭州了
+toast("到杭州了");
 
 hangZhou();
 

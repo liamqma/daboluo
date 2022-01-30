@@ -11,7 +11,7 @@ for(var count = 0; count < 999; count ++) {
     sleep(1000)
 
     // 点击：紫阳琴
-    click(938, 389)
+    click(1124, 300)
     sleep(1000)
     // 点击：弹奏
     click(713, 882)

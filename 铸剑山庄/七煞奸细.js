@@ -34,7 +34,7 @@ function check() {
     return false
 }
 
-for (var count = 0; count < 15; count ++) {
+for (var count = 0; count < 10; count ++) {
     toast("点击欧潭林");
     choosePeople(2);
     toast("点击仗义相助");

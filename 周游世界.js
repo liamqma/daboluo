@@ -716,18 +716,48 @@ function longQuan() {
 function hangZhou() {
     up(9)
     right(3)
-    up(8)
+
+    up()
+    right(2)
+    up()
+
+    toast("点击: 水果商人")
+    choosePeople(2)
+    toast("点击: 买卖")
+    clickOnButtonUnderTheDialog()
+
+    toast("点击: 苹果")
+    chooseBuyItem(1)
+    increaseBuyingItemCount(5);
+    buy();
+    toast("点击: 香蕉")
+    chooseBuyItem(2)
+    increaseBuyingItemCount(5);
+    buy();
+    toast("点击: 西瓜")
+    chooseBuyItem(3)
+    increaseBuyingItemCount(5);
+    buy();
+    toast("点击: 山楂")
+    chooseBuyItem(3)
+    increaseBuyingItemCount(5);
+    buy();
+    exitShop();
+
+    down()
+    left(2)
+    up(7)
     left()
     
-    // 点击: 鹊乐医
+    toast("点击: 鹊乐医")
     choosePeople(2);
-    // 点击: 买卖
+    toast("点击: 买卖")
     clickOnButtonUnderTheDialog();
-    // 点击：甘草
+    toast("点击: 甘草")
     chooseBuyItem(3)
     increaseBuyingItemCount(10);
     buy();
-    // 点击：茯苓
+    toast("点击: 茯苓")
     chooseBuyItem(4)
     increaseBuyingItemCount(2);
     buy();

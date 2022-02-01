@@ -1190,7 +1190,7 @@ function taiShan() {
         sleep(3000)
     }
     
-    // fuBen()
+    fuBen()
 
     function xiuLian() {
         left()
@@ -1221,7 +1221,7 @@ function taiShan() {
         right();
     }
 
-    // xiuLian();
+    xiuLian();
 
     up(4);
     right(6);

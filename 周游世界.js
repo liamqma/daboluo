@@ -162,19 +162,41 @@ function luoYang() {
     click(193, 764);
     sleep(2000);
     
-    // 点击郎中
+    toast("点击郎中");
     choosePeople(2);
-    // 点击买卖
+    toast("点击买卖");
     clickOnButtonUnderTheDialog();
-    // 甘草
+    toast("甘草");
     chooseBuyItem(3);
     increaseBuyingItemCount(10);
     buy();
-    // 杜仲
+    toast("杜仲");
     chooseBuyItem(5);
     increaseBuyingItemCount(5);
     buy();
     exitShop();
+
+    right()
+    up(3)
+    left(2)
+
+    toast("点击薛掌柜");
+    choosePeople(2);
+    toast("点击买卖");
+    clickOnButtonUnderTheDialog();
+    toast("烧刀子");
+    chooseBuyItem(1);
+    increaseBuyingItemCount(3);
+    buy();
+    toast("杜康酒");
+    chooseBuyItem(3);
+    increaseBuyingItemCount(5);
+    buy();
+    exitShop();
+
+    right(2)
+    down(3)
+    left()
     
     click(830, 852);
     sleep(2000);
@@ -714,9 +736,59 @@ function longQuan() {
 }
 
 function hangZhou() {
-    up(9)
-    right(3)
+    up(8)
+    left(7)
+    down(2)
+    left(4)
+    up(3)
+    left()
+    up(4)
+    left()
+    up()
+    left()
+    up(2)
+    right(2)
 
+    function guanHe() {
+        toast("点击: 观荷")
+        choosePeople(2)
+        sleep(3000)
+        toast("点击: 曲院风荷")
+        clickOnButtonUnderTheDialog()
+        sleep(3000)
+        clickCenter()
+        sleep(1000)
+    }
+
+    guanHe()
+
+    left(3)
+    up(5)
+    left()
+    toast("点击: 曲老")
+    choosePeople(2)
+    toast("点击: 买卖")
+    clickOnButtonUnderTheDialog()
+    toast("点击: 曲酒")
+    chooseBuyItem(3)
+    increaseBuyingItemCount(5);
+    buy();
+    exitShop();
+    right()
+    down(5)
+    right()
+    down(2)
+    right()
+    down()
+    right()
+    down(4)
+    right()
+    down(2)
+    right(4)
+    up(2)
+    right(7)
+
+    right(3)
     up()
     right(2)
     up()
@@ -780,12 +852,12 @@ function quanZhou() {
     up();
 
     function fuBen() {
-        // 点击: 郑文德
+        toast("点击: 郑文德")
         choosePeople(2);
-        // 点击: 血衣楼
+        toast("点击: 血衣楼")
         clickOnButtonUnderTheDialog();
         sleep(2000)
-        // 点击： 挑战
+        toast("点击: 挑战")
         clickOnButtonUnderTheDialog();
         sleep(2000)
         click(925, 598);
@@ -802,7 +874,7 @@ function quanZhou() {
         up();
         sleep(8000);
         
-        // 二楼
+        toast("二楼")
         left(6)
         sleep(3000);
         up(7)
@@ -815,13 +887,13 @@ function quanZhou() {
         up();
         sleep(8000);
         
-        // 三楼
+        toast("三楼")
         left(6);
         sleep(3000);
         right();
         up();
         sleep(3000);
-        // 点击： 确认离开
+        toast("点击: 确认离开")
         clickOnButtonUnderTheDialog();
         sleep(3000);
         right();
@@ -836,19 +908,19 @@ function quanZhou() {
     right(2)
     up()
     
-    // 点击: 利永新
+    toast("点击: 利永新")
     choosePeople(2);
-    // 点击: 买卖
+    toast("点击: 买卖")
     clickOnButtonUnderTheDialog();
-    // 点击：捕兽夹
+    toast("点击: 捕兽夹")
     chooseBuyItem(5)
     increaseBuyingItemCount(1);
     buy();
-    // 点击：青竹鱼竿
+    toast("点击: 青竹鱼竿")
     chooseBuyItem(7)
     increaseBuyingItemCount(1);
     buy();
-    // 点击：鱼饵
+    toast("点击: 鱼饵")
     chooseBuyItem(8)
     increaseBuyingItemCount(1);
     buy();
@@ -856,14 +928,31 @@ function quanZhou() {
     
     down();
     right(5);
-    up(6);
+    up(3)
+    right()
+    toast("杜瑶竹")
+    choosePeople(2);
+    toast("买卖")
+    clickOnButtonUnderTheDialog();
+    toast("烧刀子")
+    chooseBuyItem(1)
+    increaseBuyingItemCount(3);
+    buy();
+    toast("葡萄酒")
+    chooseBuyItem(3)
+    increaseBuyingItemCount(2);
+    buy();
+    exitShop();
+
+    left()
+    up(3);
     right(4);
     
-    // 点击: 陆飞
+    toast("点击: 陆飞")
     choosePeople(2);
-    // 点击: 巨鲸宝库
+    toast("点击: 巨鲸宝库")
     clickOnButtonUnderTheDialog(2);
-    // 点击：海钓鱼竿
+    toast("点击: 海钓鱼竿")
     chooseBuyItem(2)
     increaseBuyingItemCount(1);
     buy();
@@ -1101,18 +1190,18 @@ function taiShan() {
         sleep(3000)
     }
     
-    fuBen()
+    // fuBen()
 
     function xiuLian() {
         left()
         
-        toast("点击：机关台")
+        toast("机关台")
         choosePeople(2);
         sleep(2000)
-        toast("点击：修炼武艺")
+        toast("修炼武艺")
         clickOnButtonUnderTheDialog();
         sleep(2000)
-        toast("点击：选择人物")
+        toast("选择人物")
         clickOnButtonUnderTheDialog();
         sleep(2000)
 
@@ -1132,7 +1221,7 @@ function taiShan() {
         right();
     }
 
-    xiuLian();
+    // xiuLian();
 
     up(4);
     right(6);
@@ -1167,7 +1256,6 @@ toast("到落霞镇了")
 luoXiaZhen();
 
 toast("到洛阳了")
-
 luoYang();
 
 toast("到南阳渡了")
@@ -1203,11 +1291,9 @@ toast("到龙泉镇了")
 longQuan();
 
 toast("到杭州了");
-
 hangZhou();
 
 toast("到泉州了");
-
 quanZhou();
 
 toast("到杭州了");
@@ -1219,7 +1305,6 @@ toast("到姑苏了");
 guSu();
 
 toast("到泰山了");
-
 taiShan();
 
 toast("到幽州了");

@@ -1073,6 +1073,37 @@ function taiShan() {
     
     fuBen()
 
+    function xiuLian() {
+        left()
+        
+        toast("点击：机关台")
+        choosePeople(2);
+        sleep(2000)
+        toast("点击：修炼武艺")
+        clickOnButtonUnderTheDialog();
+        sleep(2000)
+        toast("点击：选择人物")
+        clickOnButtonUnderTheDialog();
+        sleep(2000)
+
+        toast("选主角，点确认")
+        click(1261, 225)
+        sleep(3000)
+
+        toast("选剑术")
+        clickOnButtonUnderTheDialog();
+        sleep(3000)
+
+        toast("选一具")
+        clickOnButtonUnderTheDialog();
+        sleep(60000)
+        toast("战斗结束")
+
+        right();
+    }
+
+    xiuLian();
+
     up(4);
     right(6);
     up(6)
@@ -1093,19 +1124,19 @@ function taiShan() {
 
 shiFangJi();
 
-// 到敦煌了
+toast("到敦煌了")
 
 dunHuang();
 
-// 到华山了
+toast("到华山了")
 
 huaShan()
 
-// 到落霞镇了
+toast("到落霞镇了")
 
 luoXiaZhen();
 
-// 到洛阳了
+toast("到洛阳了")
 
 luoYang();
 
@@ -1113,15 +1144,15 @@ toast("到南阳渡了")
 
 nanYangDu();
 
-// 到双王镇了
+toast("到双王镇了")
 
 shuangWangZhen();
 
-// 到凤鸣集了
+toast("到凤鸣集了")
 
 fengMingJi();
 
-// 到成都了
+toast("到成都了")
 
 chengDu();
 
@@ -1133,13 +1164,11 @@ qingChengShanDaoChengDu()
 
 chengDuDaoFengMingJi()
 
-// 到凤鸣集了
-
-// 从凤鸣集到龙泉镇
+toast("到凤鸣集了，从凤鸣集到龙泉镇")
 
 fengMingJiDaoLongQuanZhen();
 
-// 到龙泉镇了
+toast("到龙泉镇了")
 
 longQuan();
 
@@ -1147,20 +1176,22 @@ toast("到杭州了");
 
 hangZhou();
 
-// 到泉州了
+toast("到泉州了");
 
 quanZhou();
 
-// 到杭州了
+toast("到杭州了");
 
 hangZhouDaoGuSu()
 
-// 到姑苏了
+toast("到姑苏了");
 
 guSu();
 
-// 到泰山了
+toast("到泰山了");
+
 taiShan();
 
-// 到幽州了
+toast("到幽州了");
+
 youZhou()

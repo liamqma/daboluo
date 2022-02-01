@@ -24,33 +24,32 @@ function increaseWuDaoBuyingItemCount(count) {
     sleep(1000);
 }
 
-// 十方集
 function shiFangJi() {
-    // 从马车跑到药店
+    toast("从马车跑到药店")
     click(347, 267);
     sleep(2000);
     click(502, 597);
     sleep(2000);
 
-    // 点击白先生
+    toast("白先生")
     choosePeople(3);
 
-    // 点击买卖
+    toast("买卖")
     clickOnButtonUnderTheDialog();
 
-    // 点击第3个物品：甘草
+    toast("甘草")
     chooseBuyItem(3);
     increaseBuyingItemCount();
     buy();
 
-    // 点击第5个物品：枸杞
+    toast("枸杞")
     chooseBuyItem(5);
     increaseBuyingItemCount(5);
     buy();
 
     exitShop();
 
-    // 去敦煌
+    toast("去敦煌")
     click(1544, 855);
     sleep(2000);
     click(1496, 833);
@@ -113,23 +112,23 @@ function luoXiaZhen() {
     click(939, 701);
     sleep(2000);
     
-    // 到药店
+    toast("到药店")
     click(1492, 724);
     sleep(2000);
     click(1058, 435);
     sleep(2000);
-    // 点击郎中
+    toast("郎中")
     choosePeople(2);
     
-    // 点击买卖
+    toast("买卖")
     clickOnButtonUnderTheDialog();
     
-    // 甘草
+    toast("甘草")
     chooseBuyItem(3);
     increaseBuyingItemCount(10);
     buy();
     
-    // 枸杞
+    toast("枸杞")
     chooseBuyItem(4);
     increaseBuyingItemCount(5);
     buy();
@@ -206,19 +205,19 @@ function luoYang() {
     up(2);
 
     function wuDaoBei() {
-        // 点击武道碑
+        toast("武道碑");
         choosePeople(2);
-        // 点击查看
+        toast("查看");
         clickOnButtonUnderTheDialog();
-        // 点击铜钱
+        toast("铜钱");
         click(759, 902);
         sleep(2000)
-        // 点击：洗髓丹
+        toast("洗髓丹");
         chooseBuyItem(1)
         increaseWuDaoBuyingItemCount(5);
         buy();
         sleep(8000);
-        // 点击： 确认
+        toast("确认");
         click(958, 700)
         sleep(8000);
         // // 点击：经验丹

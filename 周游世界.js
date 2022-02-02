@@ -1096,26 +1096,26 @@ function taiShan() {
     down(4)
     
     function fuBen() {
-        // 点击: 老木匠
+        toast("老木匠")
         choosePeople(3);
-        // 点击: 墨门遗迹
+        toast("墨门遗迹")
         clickOnButtonUnderTheDialog();
         sleep(3000)
-        // 点击： 挑战
+        toast("挑战")
         clickOnButtonUnderTheDialog();
         sleep(3000)
         clickCenter(0);
         sleep(5000)
 
-        // 进去：废墟
+        toast("废墟")
         click(278, 365)
         sleep(5000)
     
         function baoXiang() {
-            // 点击: 宝箱
+            toast("宝箱")
             choosePeople(2);
             sleep(2000)
-            // 点击： 打开
+            toast("打开")
             clickOnButtonUnderTheDialog();
             click(806, 432);
             sleep(1000);
@@ -1166,17 +1166,17 @@ function taiShan() {
         left(2)
         sleep(5000)
 
-        // 点击： 进门
+        toast("进门")
         clickOnButtonUnderTheDialog();
         sleep(5000)
 
-        // 进去： 明鬼塔第一层
+        toast("明鬼塔第一层")
         up(2)
         sleep(3000)
         click(1065, 435)
         sleep(5000)
 
-        // 进去： 明鬼塔第二层
+        toast("明鬼塔第二层")
         up(2)
 
         baoXiang()
@@ -1184,7 +1184,7 @@ function taiShan() {
         down();
         left()
         sleep(2000)
-        // 点击： 是
+        toast("点击: 是")
         clickOnButtonUnderTheDialog();
         sleep(3000)
     }
@@ -1206,11 +1206,11 @@ function taiShan() {
 
         toast("选主角，点确认")
         click(1261, 225)
-        sleep(3000)
+        sleep(4000)
 
         toast("选剑术")
         clickOnButtonUnderTheDialog();
-        sleep(3000)
+        sleep(4000)
 
         toast("选一具")
         clickOnButtonUnderTheDialog();
@@ -1220,7 +1220,9 @@ function taiShan() {
         right();
     }
 
-    xiuLian();
+    for (var count = 0; count < 5; count ++) {
+        xiuLian();
+    }
 
     up(4);
     right(6);
@@ -1243,34 +1245,27 @@ function taiShan() {
 shiFangJi();
 
 toast("到敦煌了")
-
 dunHuang();
 
 toast("到华山了")
-
 huaShan()
 
 toast("到落霞镇了")
-
 luoXiaZhen();
 
 toast("到洛阳了")
 luoYang();
 
 toast("到南阳渡了")
-
 nanYangDu();
 
 toast("到双王镇了")
-
 shuangWangZhen();
 
 toast("到凤鸣集了")
-
 fengMingJi();
 
 toast("到成都了")
-
 chengDu();
 
 qingChengShanDaoDaXueShan()
@@ -1282,11 +1277,9 @@ qingChengShanDaoChengDu()
 chengDuDaoFengMingJi()
 
 toast("到凤鸣集了，从凤鸣集到龙泉镇")
-
 fengMingJiDaoLongQuanZhen();
 
 toast("到龙泉镇了")
-
 longQuan();
 
 toast("到杭州了");
@@ -1300,12 +1293,10 @@ toast("到杭州了");
 hangZhouDaoGuSu()
 
 toast("到姑苏了");
-
 guSu();
 
 toast("到泰山了");
 taiShan();
 
 toast("到幽州了");
-
 youZhou()

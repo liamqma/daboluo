@@ -179,19 +179,15 @@ function luoYang() {
     up(3)
     left(2)
 
-    toast("点击薛掌柜");
-    choosePeople(2);
-    toast("点击买卖");
-    clickOnButtonUnderTheDialog();
-    toast("烧刀子");
-    chooseBuyItem(1);
-    increaseBuyingItemCount(3);
-    buy();
-    toast("杜康酒");
-    chooseBuyItem(3);
-    increaseBuyingItemCount(5);
-    buy();
-    exitShop();
+    // toast("点击薛掌柜");
+    // choosePeople(2);
+    // toast("点击买卖");
+    // clickOnButtonUnderTheDialog();
+    // toast("杜康酒");
+    // chooseBuyItem(3);
+    // increaseBuyingItemCount(5);
+    // buy();
+    // exitShop();
 
     right(2)
     down(3)
@@ -929,19 +925,19 @@ function quanZhou() {
     right(5);
     up(3)
     right()
-    toast("杜瑶竹")
-    choosePeople(2);
-    toast("买卖")
-    clickOnButtonUnderTheDialog();
-    toast("烧刀子")
-    chooseBuyItem(1)
-    increaseBuyingItemCount(3);
-    buy();
-    toast("葡萄酒")
-    chooseBuyItem(3)
-    increaseBuyingItemCount(2);
-    buy();
-    exitShop();
+    // toast("杜瑶竹")
+    // choosePeople(2);
+    // toast("买卖")
+    // clickOnButtonUnderTheDialog();
+    // toast("烧刀子")
+    // chooseBuyItem(1)
+    // increaseBuyingItemCount(3);
+    // buy();
+    // toast("葡萄酒")
+    // chooseBuyItem(3)
+    // increaseBuyingItemCount(2);
+    // buy();
+    // exitShop();
 
     left()
     up(3);

@@ -179,15 +179,15 @@ function luoYang() {
     up(3)
     left(2)
 
-    // toast("点击薛掌柜");
-    // choosePeople(2);
-    // toast("点击买卖");
-    // clickOnButtonUnderTheDialog();
-    // toast("杜康酒");
-    // chooseBuyItem(3);
-    // increaseBuyingItemCount(5);
-    // buy();
-    // exitShop();
+    toast("点击薛掌柜");
+    choosePeople(2);
+    toast("点击买卖");
+    clickOnButtonUnderTheDialog();
+    toast("杜康酒");
+    chooseBuyItem(3);
+    increaseBuyingItemCount(5);
+    buy();
+    exitShop();
 
     right(2)
     down(3)
@@ -259,10 +259,11 @@ function luoYang() {
             clickCenter();
             sleep(120000);
             toast("武馆结束");
+            clickCenter();
         }
     }
 
-    wuGuan();
+    // wuGuan();
     
     left(4);
     down(4);
@@ -411,7 +412,21 @@ function shuangWangZhen() {
     
     left();
     up(3);
-    left(3);
+    right(2)
+    down()
+
+    toast("李小白")
+    choosePeople(2);
+    toast("买卖")
+    clickOnButtonUnderTheDialog();
+    toast("女儿红")
+    chooseBuyItem(2)
+    increaseBuyingItemCount(2);
+    buy();
+    exitShop();
+
+    up()
+    left(5);
     down(8);
     left(10);
     down(4);
@@ -442,19 +457,19 @@ function fengMingJi() {
     down();
     sleep(2000);
     
-    // 点击: 摊贩
+    toast("摊贩")
     choosePeople(2);
-    // 点击买卖
+    toast("买卖")
     clickOnButtonUnderTheDialog();
-    // 点击：捕兽夹
+    toast("捕兽夹")
     chooseBuyItem(6)
     increaseBuyingItemCount(1);
     buy();
-    // 点击：青竹鱼竿
+    toast("青竹鱼竿")
     chooseBuyItem(7)
     increaseBuyingItemCount(2);
     buy();
-    // 点击：鱼饵
+    toast("鱼饵")
     chooseBuyItem(8)
     increaseBuyingItemCount(1);
     buy();
@@ -464,19 +479,19 @@ function fengMingJi() {
     left();
     up();
     
-    // 点击: 老郎中
+    toast("老郎中")
     choosePeople(2);
-    // 点击买卖
+    toast("买卖")
     clickOnButtonUnderTheDialog();
-    // 点击：甘草
+    toast("甘草")
     chooseBuyItem(3)
     increaseBuyingItemCount(10);
     buy();
-    // 点击：茯苓
+    toast("茯苓")
     chooseBuyItem(4)
     increaseBuyingItemCount(5);
     buy();
-    // 点击：杜仲
+    toast("杜仲")
     chooseBuyItem(5)
     increaseBuyingItemCount(2);
     buy();

@@ -155,19 +155,19 @@ function youZhou() {
     up(4)
     left(8)
     
-    // 点击: 施必救
+    toast("施必救")
     choosePeople(2);
-    // 点击: 买卖
+    toast("买卖")
     clickOnButtonUnderTheDialog();
-    // 点击：甘草
+    toast("甘草")
     chooseBuyItem(3)
     increaseBuyingItemCount(10);
     buy();
-    // 点击：茯苓
+    toast("茯苓")
     chooseBuyItem(4)
     increaseBuyingItemCount(5);
     buy();
-    // 白芍
+    toast("白芍")
     chooseBuyItem(5)
     increaseBuyingItemCount(2);
     buy();
@@ -177,31 +177,50 @@ function youZhou() {
     up(7)
     left()
 
-    // 到周掌柜了
+    toast("到周掌柜了")
+    right()
+    down(2)
+    left(9)
+    up(3)
+    toast("少一段")
+    choosePeople(2);
+    toast("买卖")
+    clickOnButtonUnderTheDialog();
+    toast("女儿红")
+    chooseBuyItem(4)
+    increaseBuyingItemCount(3);
+    buy();
+    exitShop();
+
+    down(3)
+    right(9)
+    up(2)
+    left()
+    toast("到周掌柜了")
     right(5)
     up(3)
     right()
     up()
     right()
 
-    // 点击: 地牢入口
+    toast("地牢入口")
     choosePeople(2);
     sleep(5000)
 
-    // 到地牢了
+    toast("到地牢了")
     left(6)
     up()
     left()
 
-    // 点击: 狱卒
+    toast("狱卒")
     choosePeople(2);
-    // 点击：笼斗
+    toast("笼斗")
     clickOnButtonUnderTheDialog();
     sleep(4000)
-    // 点击：参与笼斗
+    toast("参与笼斗")
     clickOnButtonUnderTheDialog();
     sleep(4000)
-    // 点击：对战囚徒
+    toast("对战囚徒")
     clickOnButtonUnderTheDialog();
     sleep(5000)
     clickCenter()
@@ -214,7 +233,7 @@ function youZhou() {
     right(2)
     down(3)
     sleep(6000)
-     // 点击：开锁
+    toast("开锁")
     clickOnButtonUnderTheDialog();  
     sleep(3000)
 
@@ -223,23 +242,23 @@ function youZhou() {
     down(2)
     left()
 
-    // 点击: 玩家
+    toast("玩家")
     choosePeople(2);
-    // 点击：笼斗
+    toast("笼斗")
     clickOnButtonUnderTheDialog();
 }
 
 function muRen() {
-    // 点击木人
+    toast("点击木人")
     choosePeople(2);
     sleep(5000);
-    // 点击练武
+    toast("点击练武")
     clickOnButtonUnderTheDialog();
     sleep(5000);
 }
 
-// 点击数量增加
 function increaseBuyingItemCount(count) {
+    toast("点击数量增加")
     if (!count) count = 10;
     for(let i = 0; i < count; i++) {
         click(1689, 637);
@@ -282,8 +301,8 @@ function exitShop() {
     sleep(1500);
 }
 
-// 购买
 function buy() {
+    toast("购买")
     click(1565, 904);
     sleep(1000);
 }

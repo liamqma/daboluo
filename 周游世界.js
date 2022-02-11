@@ -465,10 +465,6 @@ function fengMingJi() {
     chooseBuyItem(6)
     increaseBuyingItemCount(1);
     buy();
-    toast("青竹鱼竿")
-    chooseBuyItem(7)
-    increaseBuyingItemCount(2);
-    buy();
     toast("鱼饵")
     chooseBuyItem(8)
     increaseBuyingItemCount(1);

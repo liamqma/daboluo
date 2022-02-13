@@ -933,19 +933,7 @@ function quanZhou() {
     right(5);
     up(3)
     right()
-    // toast("杜瑶竹")
-    // choosePeople(2);
-    // toast("买卖")
-    // clickOnButtonUnderTheDialog();
-    // toast("烧刀子")
-    // chooseBuyItem(1)
-    // increaseBuyingItemCount(3);
-    // buy();
-    // toast("葡萄酒")
-    // chooseBuyItem(3)
-    // increaseBuyingItemCount(2);
-    // buy();
-    // exitShop();
+    toast("到杜瑶竹了")
 
     left()
     up(3);

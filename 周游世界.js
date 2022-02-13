@@ -255,7 +255,7 @@ function luoYang() {
         }
     }
 
-    // wuGuan();
+    wuGuan();
     
     left(4);
     down(4);

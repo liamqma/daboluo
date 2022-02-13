@@ -179,15 +179,7 @@ function luoYang() {
     up(3)
     left(2)
 
-    toast("点击薛掌柜");
-    choosePeople(2);
-    toast("点击买卖");
-    clickOnButtonUnderTheDialog();
-    toast("杜康酒");
-    chooseBuyItem(3);
-    increaseBuyingItemCount(5);
-    buy();
-    exitShop();
+    toast("到薛掌柜了");
 
     right(2)
     down(3)
@@ -784,15 +776,7 @@ function hangZhou() {
     left(3)
     up(5)
     left()
-    toast("点击: 曲老")
-    choosePeople(2)
-    toast("点击: 买卖")
-    clickOnButtonUnderTheDialog()
-    toast("点击: 曲酒")
-    chooseBuyItem(3)
-    increaseBuyingItemCount(5);
-    buy();
-    exitShop();
+    toast("到曲老了")
     right()
     down(5)
     right()

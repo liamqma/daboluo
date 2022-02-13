@@ -271,15 +271,15 @@ function luoYang() {
     up(3);
     left(1);
     
-    // // 点击王屠夫
-    // choosePeople(2);
-    // // 点击买卖
-    // clickOnButtonUnderTheDialog();
-    // // 点击：羊肉
-    // chooseBuyItem(2)
-    // increaseBuyingItemCount(5);
-    // buy();
-    // exitShop();
+    toast("点击王屠夫");
+    choosePeople(2);
+    toast("点击买卖");
+    clickOnButtonUnderTheDialog();
+    toast("猪肉")
+    chooseBuyItem(2)
+    increaseBuyingItemCount(5);
+    buy();
+    exitShop();
     
     click(974, 488);
     sleep(2000);
@@ -582,6 +582,19 @@ function qingChengShanDaoDaXueShan() {
     left()
     up()
     left(10)
+
+    up(9)
+    toast("养蜂人")
+    choosePeople(2);
+    toast("买卖")
+    clickOnButtonUnderTheDialog();
+    toast("红糖")
+    chooseBuyItem(1)
+    increaseBuyingItemCount(5);
+    buy();
+    exitShop();
+    down(9)
+
     down(4)
     left(11)
     waitForMapChange()

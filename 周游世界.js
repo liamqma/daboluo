@@ -235,7 +235,7 @@ function luoYang() {
     right(2);
 
     function wuGuan() {
-        for (let i = 0; i < 2; i++) {
+        for (let i = 0; i < 1; i++) {
             // 点击常四海
             choosePeople(2);
             // 点击切磋

@@ -18,13 +18,20 @@ function clickOnButtonUnderTheDialog(number) {
     if(!number) number = 1;
     switch(number) {
         case 1:
+            toast("点击对话框下第一个按钮")
             click(1209, 476);
             break;
         case 2:
+            toast("点击对话框下第二个按钮")
             click(1204, 595);
             break;
         case 3:
+            toast("点击对话框下第三个按钮")
             click(1204, 693);
+            break;
+        case 4:
+            toast("点击对话框下第四个按钮")
+            click(1204, 810);
             break;
     }
     sleep(2000);
@@ -307,6 +314,18 @@ function buy() {
     sleep(1000);
 }
 
+function xuanWuPin(number) {
+    switch(number) {
+        case 1:
+            click(480, 395);
+            break;
+        case 2:
+            click(630, 395);
+            break;
+    }
+    sleep(1000);
+}
+
 module.exports = {
     choosePeople: choosePeople,
     clickOnButtonUnderTheDialog: clickOnButtonUnderTheDialog,
@@ -324,4 +343,5 @@ module.exports = {
     chooseBuyItem: chooseBuyItem,
     exitShop: exitShop,
     buy: buy,
+    xuanWuPin: xuanWuPin,
 }

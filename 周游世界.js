@@ -1,4 +1,3 @@
-// utils
 var utils = require('utils');
 var left = utils.left;
 var down = utils.down;

@@ -4,7 +4,7 @@ if(!requestScreenCapture()){
     toast("请求截图失败");
     exit();
 }
-
+var number = parseInt(rawInput("请输入次数", "57"));
 var img = images.read("七煞奸细文字.jpeg");
 
 var utils = require('../utils');
@@ -34,7 +34,7 @@ function check() {
     return false
 }
 
-for (var count = 0; count < 10; count ++) {
+for (var count = 0; count < number; count ++) {
     toast("点击欧潭林");
     choosePeople(2);
     toast("点击仗义相助");
@@ -99,6 +99,7 @@ for (var count = 0; count < 10; count ++) {
     sleep(3000)
     click(1056, 327)
     sleep(3000)
+    toast("循坏"+(count + 1)+"/"+number+"结束")
 }
 
 img.recycle();

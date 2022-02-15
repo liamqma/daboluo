@@ -146,6 +146,7 @@ function waitForMapChange() {
 }
 
 function youZhou() {
+    toast("到幽州了");
     up(15)
     right(7)
     down(3)

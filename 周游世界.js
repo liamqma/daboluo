@@ -936,6 +936,14 @@ function quanZhou() {
   up(3);
   right();
   toast("到杜瑶竹了");
+  choosePeople(2);
+  toast("点击: 买卖");
+  clickOnButtonUnderTheDialog();
+  toast("点击: 葡萄酒");
+  chooseBuyItem(3);
+  increaseBuyingItemCount(2);
+  buy();
+  exitShop();
 
   left();
   up(3);

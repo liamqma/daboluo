@@ -278,15 +278,15 @@ function luoYang() {
   click(974, 488);
   sleep(2000);
 
-  // // 点击摊贩
-  // choosePeople(2);
-  // // 点击买卖
-  // clickOnButtonUnderTheDialog();
-  // // 点击：辣椒
-  // chooseBuyItem(3)
-  // increaseBuyingItemCount(5);
-  // buy();
-  // exitShop();
+  toast("点击摊贩");
+  choosePeople(2);
+  toast("点击买卖");
+  clickOnButtonUnderTheDialog();
+  toast("点击调料");
+  chooseBuyItem(1);
+  increaseBuyingItemCount(5);
+  buy();
+  exitShop();
 
   right(2);
   down();

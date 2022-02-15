@@ -412,14 +412,6 @@ function shuangWangZhen() {
   down();
 
   toast("李小白");
-  choosePeople(2);
-  toast("买卖");
-  clickOnButtonUnderTheDialog();
-  toast("女儿红");
-  chooseBuyItem(2);
-  increaseBuyingItemCount(2);
-  buy();
-  exitShop();
 
   up();
   left(5);

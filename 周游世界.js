@@ -304,18 +304,7 @@ function luoYang() {
   up();
   left(2);
 
-  // 下面是去泰山
-  // click(1582, 588);
-  // sleep(2000);
-  // click(1557, 449);
-  // sleep(2000);
-  // click(1500, 838);
-  // sleep(2000);
-  // click(1067, 640);
-  // sleep(2000);
-  // 到泰山了
-
-  // 去南阳渡
+  toast("去南阳渡");
   click(191, 639);
   sleep(2000);
   click(212, 425);

@@ -1,26 +1,4 @@
-var utils = require('./utils');
+var utils = require("./utils");
 var cook = utils.cook;
 
-function start() {
-    // 点击：菜谱
-    click(1163, 378)
-    sleep(1000)
-
-    click(614, 526)
-    sleep(1000)
-
-    // 点击：确认菜谱
-    click(1320, 809)
-    sleep(1000)
-
-    cook(877);
-}
-
-for(var count=1; count<=20; count++) {
-    start();
-}
-
-
-
-
-
+cook(877);

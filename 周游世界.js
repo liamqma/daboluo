@@ -291,15 +291,7 @@ function luoYang() {
   right(2);
   down();
 
-  toast("点击菜贩");
-  choosePeople(2);
-  toast("点击买卖");
-  clickOnButtonUnderTheDialog();
-  toast("点击青菜");
-  chooseBuyItem(1);
-  increaseBuyingItemCount(4);
-  buy();
-  exitShop();
+  toast("菜贩");
 
   up();
   left(2);

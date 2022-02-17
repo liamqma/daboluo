@@ -270,7 +270,15 @@ function luoYang() {
   toast("点击买卖");
   clickOnButtonUnderTheDialog();
   toast("猪肉");
+  chooseBuyItem(1);
+  increaseBuyingItemCount(5);
+  buy();
+  toast("羊肉");
   chooseBuyItem(2);
+  increaseBuyingItemCount(5);
+  buy();
+  toast("牛肉");
+  chooseBuyItem(3);
   increaseBuyingItemCount(5);
   buy();
   exitShop();

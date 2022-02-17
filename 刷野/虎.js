@@ -6,11 +6,14 @@ if (!requestScreenCapture()) {
 var number = Math.ceil(parseInt(rawInput("请输入体力")) / 6);
 toast("运行" + number + "次");
 
+var img = images.read("诱虎出山.jpeg");
+var imgTiger = images.read("虎.jpeg");
+
 for (var count = 0; count < number; count++) {
   var screenshot = undefined;
   var foundTiger = undefined;
+  var tigerP = undefined;
   var utils = require("../utils");
-  var img = images.read("诱虎出山.jpeg");
   var left = utils.left;
   var right = utils.right;
   var xuanWuPin = utils.xuanWuPin;
@@ -32,5 +35,14 @@ for (var count = 0; count < number; count++) {
 
   clickOnButtonUnderTheDialog(1);
   xuanWuPin(1);
+
   sleep(2000);
+
+  screenshot = captureScreen();
+  tigerP = findImage(screenshot, imgTiger, { threshold: 0.7 });
+
+  if (tigerP) {
+    click(tigerP.x, tigerP.y);
+    sleep(5000);
+  }
 }

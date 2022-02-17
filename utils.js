@@ -193,6 +193,7 @@ function youZhou() {
   toast("少一段");
   down(2);
   left();
+
   toast("菜贩");
   choosePeople(2);
   toast("买卖");
@@ -202,9 +203,28 @@ function youZhou() {
   increaseBuyingItemCount(5);
   buy();
   exitShop();
-  right();
-  down();
-  right(9);
+
+  down(2);
+  toast("猪肉荣");
+  choosePeople(2);
+  toast("点击买卖");
+  clickOnButtonUnderTheDialog();
+  toast("猪肉");
+  chooseBuyItem(1);
+  increaseBuyingItemCount(5);
+  buy();
+  toast("羊肉");
+  chooseBuyItem(2);
+  increaseBuyingItemCount(5);
+  buy();
+  toast("牛肉");
+  chooseBuyItem(3);
+  increaseBuyingItemCount(5);
+  buy();
+  exitShop();
+
+  up();
+  right(10);
   up(2);
   left();
   toast("到周掌柜了");

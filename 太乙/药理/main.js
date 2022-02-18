@@ -15,6 +15,12 @@ var answers = [
   "虎骨",
   "蜈蚣",
   "贝草",
+  "白芍",
+  "修治",
+  "金银花甘寒",
+  "茯苓",
+  "金银花白色",
+  "鳖甲",
 ];
 var screenshot = captureScreen();
 

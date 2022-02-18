@@ -8,12 +8,12 @@ toast("运行" + number + "次");
 
 var img = images.read("诱虎出山.jpeg");
 var imgTiger = images.read("虎.jpeg");
+var utils = require("../utils");
 
 for (var count = 0; count < number; count++) {
   var screenshot = undefined;
   var foundTiger = undefined;
   var tigerP = undefined;
-  var utils = require("../utils");
   var left = utils.left;
   var right = utils.right;
   var xuanWuPin = utils.xuanWuPin;

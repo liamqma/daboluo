@@ -293,6 +293,7 @@ function luoYang() {
   toast("点击调料");
   chooseBuyItem(1);
   increaseBuyingItemCount(5);
+  buy();
   toast("米");
   chooseBuyItem(4);
   increaseBuyingItemCount(5);

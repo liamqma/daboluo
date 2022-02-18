@@ -575,6 +575,14 @@ function qingChengShanDaoDaXueShan() {
   chooseBuyItem(1);
   increaseBuyingItemCount(5);
   buy();
+  toast("蜂蜜");
+  chooseBuyItem(2);
+  increaseBuyingItemCount(5);
+  buy();
+  toast("桂花蜜");
+  chooseBuyItem(3);
+  increaseBuyingItemCount(5);
+  buy();
   exitShop();
   down(9);
 

@@ -253,11 +253,12 @@ function luoYang() {
       sleep(5000);
       clickCenter();
       sleep(120000);
-      toast("武馆结束");
+      toast("武馆结束，往下走一个取消对话框");
+      right();
     }
   }
 
-  // wuGuan();
+  wuGuan();
 
   left(4);
   down(4);

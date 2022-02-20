@@ -305,6 +305,10 @@ function luoYang() {
   chooseBuyItem(1);
   increaseBuyingItemCount(5);
   buy();
+  toast("点击葱蒜");
+  chooseBuyItem(2);
+  increaseBuyingItemCount(5);
+  buy();
   toast("米");
   chooseBuyItem(4);
   increaseBuyingItemCount(5);

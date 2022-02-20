@@ -252,9 +252,12 @@ function luoYang() {
       clickCenter();
       sleep(5000);
       clickCenter();
-      sleep(120000);
+      sleep(60000);
       toast("武馆结束，往下走一个取消对话框");
       right();
+      sleep(2000);
+      right();
+      sleep(2000);
     }
   }
 

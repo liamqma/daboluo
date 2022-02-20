@@ -4,7 +4,7 @@ var down = utils.down;
 var up = utils.up;
 var right = utils.right;
 var yanXingGong = utils.yanXingGong;
-var jiFaDiYiGeQingGong = utils.jiFaDiYiGeQingGong;
+var jiFaJiuTu = utils.jiFaJiuTu;
 var choosePeople = utils.choosePeople;
 var clickOnButtonUnderTheDialog = utils.clickOnButtonUnderTheDialog;
 
@@ -81,7 +81,7 @@ clickOnButtonUnderTheDialog(2);
 
 click(1180, 382);
 sleep(3000);
-jiFaDiYiGeQingGong();
+jiFaJiuTu();
 
 right();
 up(2);

@@ -372,7 +372,7 @@ function yanXingGong() {
   sleep(2000);
 }
 
-function jiFaDiYiGeQingGong() {
+function jiFaJiuTu() {
   toast("武功");
   click(614, 1025);
   sleep(2000);
@@ -396,6 +396,14 @@ function jiFaDiYiGeQingGong() {
   sleep(2000);
 }
 
+function shiZhanQingGong() {
+  toast("地面");
+  choosePeople(1);
+  sleep(2000);
+  toast("施展轻功");
+  clickOnButtonUnderTheDialog(2);
+}
+
 module.exports = {
   choosePeople: choosePeople,
   clickOnButtonUnderTheDialog: clickOnButtonUnderTheDialog,
@@ -415,5 +423,6 @@ module.exports = {
   buy: buy,
   xuanWuPin: xuanWuPin,
   yanXingGong: yanXingGong,
-  jiFaDiYiGeQingGong: jiFaDiYiGeQingGong,
+  jiFaJiuTu: jiFaJiuTu,
+  shiZhanQingGong: shiZhanQingGong,
 };

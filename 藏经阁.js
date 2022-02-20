@@ -7,7 +7,7 @@ var right = utils.right;
 var choosePeople = utils.choosePeople;
 var clickOnButtonUnderTheDialog = utils.clickOnButtonUnderTheDialog;
 var yanXingGong = utils.yanXingGong;
-var jiFaDiYiGeQingGong = utils.jiFaDiYiGeQingGong;
+var jiFaJiuTu = utils.jiFaJiuTu;
 
 left(9);
 up(21);
@@ -79,7 +79,7 @@ sleep(1500);
 down();
 sleep(2000);
 
-jiFaDiYiGeQingGong();
+jiFaJiuTu();
 
 down(21);
 right(9);

@@ -1,13 +1,19 @@
-var utils = require('../utils');
-var left = function(count) { return utils.left(count, 300); };
-var down = function(count) { return utils.down(count, 300); };
-var up = function(count) { return utils.up(count, 300); };
-var right = function(count) { return utils.right(count, 300); };
+var utils = require("../utils");
+var left = function (count) {
+  return utils.left(count, 300);
+};
+var down = function (count) {
+  return utils.down(count, 300);
+};
+var up = function (count) {
+  return utils.up(count, 300);
+};
+var right = function (count) {
+  return utils.right(count, 300);
+};
 var choosePeople = utils.choosePeople;
 var clickOnButtonUnderTheDialog = utils.clickOnButtonUnderTheDialog;
 var clickCenter = utils.clickCenter;
-
-
 
 left(5);
 down(9);
@@ -43,13 +49,13 @@ click(375, 317);
 sleep(8000);
 
 // 进入：凤鸣集
-left(6)
-up(3)
-left(5)
-down(7)
-left(20)
-up(4)
-left(10)
+left(6);
+up(3);
+left(5);
+down(7);
+left(20);
+up(4);
+left(10);
 sleep(8000);
 
 // 到成都了
@@ -60,25 +66,26 @@ up(15);
 left(5);
 down();
 left();
-down(3)
-right(2)
-up()
-right()
-up()
+down(3);
+right(2);
+up();
+right();
+up();
 
 // 点击: 董三川
 choosePeople(2);
 // 点击：送镖
 clickOnButtonUnderTheDialog();
 clickCenter();
+sleep(2000);
 
-down()
-left()
-down()
-left(2)
-up(3)
-left()
-up()
-left(2)
-up(2)
-left()
+down();
+left();
+down();
+left(2);
+up(3);
+left();
+up();
+left(2);
+up(2);
+left();

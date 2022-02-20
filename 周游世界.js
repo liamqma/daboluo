@@ -15,6 +15,13 @@ var chooseBuyItem = utils.chooseBuyItem;
 var exitShop = utils.exitShop;
 var buy = utils.buy;
 
+if (!requestScreenCapture()) {
+  toast("请求截图失败");
+  exit();
+}
+
+var imgXiuFuKuiLei = images.read("修复傀儡.jpeg");
+
 function increaseWuDaoBuyingItemCount(count) {
   if (!count) count = 10;
   for (let i = 0; i < count; i++) {
@@ -1258,6 +1265,27 @@ function taiShan() {
     xiuLian();
   }
 
+  function xiuKuiLei() {
+    left();
+    toast("机关台");
+    choosePeople(2);
+    sleep(2000);
+    var p = findImage(captureScreen(), imgXiuFuKuiLei, { threshold: 0.7 });
+    if (p) {
+      clickOnButtonUnderTheDialog(2);
+      sleep(5000);
+      clickOnButtonUnderTheDialog(1);
+      sleep(6000);
+    } else {
+      toast("没有要修复的傀儡");
+    }
+    clickCenter();
+    sleep(2000);
+    right();
+  }
+
+  xiuKuiLei();
+
   up(4);
   right(6);
   up(6);
@@ -1313,5 +1341,3 @@ if (index >= 0) {
 } else {
   toast("您取消了选择");
 }
-
-// maps.forEach(map => map())

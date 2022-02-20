@@ -26,6 +26,8 @@ var answers = [
   "何首乌",
   "燕窝",
   "牛膝",
+  "龙葵",
+  "道家经典",
 ];
 
 var qStartingX = 318;
@@ -45,14 +47,13 @@ var a2StartY = 551;
 var a3StartY = 662;
 var a4StartY = 771;
 
-var screenshot = captureScreen();
-
 var pQ;
 var pA;
 
 for (var count = 1; count <= 10; count++) {
   pQ = undefined;
   pA = undefined;
+  var screenshot = captureScreen();
   for (var i = 0; i < answers.length; i++) {
     var answer = answers[i];
     var imgQ = images.read(answer + "q.jpg");

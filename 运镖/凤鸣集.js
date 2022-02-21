@@ -1,13 +1,19 @@
-var utils = require('../utils');
-var left = function(count) { return utils.left(count, 300); };
-var down = function(count) { return utils.down(count, 300); };
-var up = function(count) { return utils.up(count, 300); };
-var right = function(count) { return utils.right(count, 300); };
+var utils = require("../utils");
+var left = function (count) {
+  return utils.left(count, 300);
+};
+var down = function (count) {
+  return utils.down(count, 300);
+};
+var up = function (count) {
+  return utils.up(count, 300);
+};
+var right = function (count) {
+  return utils.right(count, 300);
+};
 var choosePeople = utils.choosePeople;
 var clickOnButtonUnderTheDialog = utils.clickOnButtonUnderTheDialog;
 var clickCenter = utils.clickCenter;
-
-
 
 left(5);
 down(9);
@@ -43,20 +49,21 @@ click(375, 317);
 sleep(8000);
 
 // 进入：凤鸣集
-left(6)
-up(3)
-left(5)
-down(7)
-left(16)
-up(4)
+left(6);
+up(3);
+left(5);
+down(7);
+left(16);
+up(4);
 
 // 点击: 叶琦蔷
 choosePeople(2);
 // 点击：送镖
 clickOnButtonUnderTheDialog();
 clickCenter();
+sleep(2000);
 
-down(4)
-left(4)
-up(2)
-left()
+down(4);
+left(4);
+up(2);
+left();

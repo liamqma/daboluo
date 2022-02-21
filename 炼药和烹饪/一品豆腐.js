@@ -15,7 +15,7 @@ function start() {
   sleep(2000);
 
   toast("一品豆腐");
-  click(625, 663);
+  click(625, 590);
   sleep(1000);
 
   toast("确认菜谱");

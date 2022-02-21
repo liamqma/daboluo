@@ -28,6 +28,7 @@ var answers = [
   "牛膝",
   "龙葵",
   "道家经典",
+  "地黄",
 ];
 
 var qStartingX = 318;

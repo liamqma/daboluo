@@ -39,7 +39,7 @@ clickOnButtonUnderTheDialog(1);
 sleep(8000);
 
 // 进入藏经阁了
-click(828, 708);
+click(735, 537);
 sleep(2000);
 
 // 点击：书架

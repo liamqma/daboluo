@@ -831,7 +831,7 @@ function hangZhou() {
   increaseBuyingItemCount(5);
   buy();
   toast("点击: 山楂");
-  chooseBuyItem(3);
+  chooseBuyItem(4);
   increaseBuyingItemCount(5);
   buy();
   exitShop();

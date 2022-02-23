@@ -72,6 +72,8 @@ sleep(3000);
 
 up(2);
 
+sleep(2000);
+
 toast("地面");
 choosePeople(1);
 sleep(2000);

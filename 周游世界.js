@@ -874,7 +874,7 @@ function hangZhou() {
   increaseBuyingItemCount(2);
   buy();
   toast("点击: 牛黄");
-  chooseBuyItem(5);
+  chooseBuyItem(6);
   increaseBuyingItemCount(5);
   buy();
   exitShop();

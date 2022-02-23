@@ -961,10 +961,6 @@ function quanZhou() {
   chooseBuyItem(5);
   increaseBuyingItemCount(1);
   buy();
-  toast("点击: 青竹鱼竿");
-  chooseBuyItem(7);
-  increaseBuyingItemCount(1);
-  buy();
   toast("点击: 鱼饵");
   chooseBuyItem(8);
   increaseBuyingItemCount(1);

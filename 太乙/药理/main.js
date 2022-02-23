@@ -32,6 +32,7 @@ var answers = [
   "冬虫夏草",
   "灵芝",
   "当归",
+  "决明子",
 ];
 
 var qStartingX = 318;

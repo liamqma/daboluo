@@ -195,7 +195,7 @@ function xiongChengDu() {
   toast("施展轻功");
   clickOnButtonUnderTheDialog(3);
   click(1191, 694);
-  sleep(1000);
+  sleep(3000);
 
   jiFaJiuTu();
   down();

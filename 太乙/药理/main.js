@@ -33,6 +33,7 @@ var answers = [
   "灵芝",
   "当归",
   "决明子",
+  "雪莲",
 ];
 
 var qStartingX = 318;

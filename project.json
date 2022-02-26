@@ -2,7 +2,9 @@
     "name": "烟雨江湖脚本",
     "main": "周游世界.js",
     "ignore": [
-        "build"
+        "build",
+        "README.md",
+        ".*"
     ],
     "packageName": "com.example",
     "versionName": "1.0.0",

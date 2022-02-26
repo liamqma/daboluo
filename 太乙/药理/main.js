@@ -34,6 +34,7 @@ var answers = [
   "当归",
   "决明子",
   "雪莲",
+  "鹿茸",
 ];
 
 var qStartingX = 318;

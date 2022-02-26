@@ -34,7 +34,7 @@ for (var count = 0; count < number; count++) {
   }
 
   clickOnButtonUnderTheDialog(1);
-  xuanWuPin(1);
+  xuanWuPin(2);
 
   sleep(2000);
 

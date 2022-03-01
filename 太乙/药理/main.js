@@ -35,6 +35,7 @@ var answers = [
   "决明子",
   "雪莲",
   "鹿茸",
+  "蛇胆",
 ];
 
 var qStartingX = 318;

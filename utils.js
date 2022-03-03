@@ -19,18 +19,22 @@ function clickOnButtonUnderTheDialog(number) {
   switch (number) {
     case 1:
       toast("点击对话框下第一个按钮");
+      sleep(1000);
       click(1209, 476);
       break;
     case 2:
       toast("点击对话框下第二个按钮");
-      click(1204, 595);
+      sleep(1000);
+      click(1204, 602);
       break;
     case 3:
       toast("点击对话框下第三个按钮");
+      sleep(1000);
       click(1204, 693);
       break;
     case 4:
       toast("点击对话框下第四个按钮");
+      sleep(1000);
       click(1204, 810);
       break;
   }

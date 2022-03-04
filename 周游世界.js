@@ -728,7 +728,7 @@ function fengMingJiDaoLongQuanZhen() {
   right(6);
   sleep(5000);
 
-  // 到双王镇了
+  toast("到双王镇了");
   click(1233, 897);
   sleep(2000);
   up(4);
@@ -743,7 +743,7 @@ function fengMingJiDaoLongQuanZhen() {
   right(3);
   sleep(5000);
 
-  // 到衡山了
+  toast("到衡山了");
   right(6);
   down();
   right(4);
@@ -751,6 +751,57 @@ function fengMingJiDaoLongQuanZhen() {
   right(4);
   up(9);
   left(3);
+
+  function fuBen() {
+    toast("去邹家堡");
+    down(4);
+    left();
+    down(2);
+    left(4);
+    up(9);
+    left(3);
+    up(2);
+    choosePeople(2);
+    clickOnButtonUnderTheDialog();
+    sleep(2000);
+    clickOnButtonUnderTheDialog();
+    sleep(2000);
+    clickCenter();
+    waitForMapChange();
+    click(190, 353);
+    sleep(5000);
+    click(1475, 201);
+    sleep(5000);
+    click(1489, 202);
+    waitForMapChange();
+    click(1456, 184);
+    sleep(5000);
+    click(1650, 142);
+    sleep(5000);
+    down(2);
+    right(8);
+    up(1);
+    waitForMapChange();
+    click(1600, 150);
+    sleep(5000);
+    down();
+    left(2);
+    sleep(3000);
+    toast("点击: 确认离开");
+    clickOnButtonUnderTheDialog();
+    waitForMapChange();
+
+    down(2);
+    right(3);
+    down(9);
+    right(4);
+    up(2);
+    right();
+    up(4);
+  }
+
+  fuBen();
+
   up(7);
   sleep(5000);
 }

@@ -218,12 +218,6 @@ function luoYang() {
     toast("确认");
     click(958, 700);
     sleep(8000);
-    // // 点击：经验丹
-    // chooseBuyItem(2)
-    // increaseWuDaoBuyingItemCount(3);
-    // buy();
-    // sleep(8000);
-    // 点击： 确认
     click(958, 700);
     sleep(8000);
     exitShop();

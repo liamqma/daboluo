@@ -811,28 +811,7 @@ function hangZhou() {
   right(2);
   up();
 
-  toast("点击: 水果商人");
-  choosePeople(2);
-  toast("点击: 买卖");
-  clickOnButtonUnderTheDialog();
-
-  toast("点击: 苹果");
-  chooseBuyItem(1);
-  increaseBuyingItemCount(5);
-  buy();
-  toast("点击: 香蕉");
-  chooseBuyItem(2);
-  increaseBuyingItemCount(5);
-  buy();
-  toast("点击: 西瓜");
-  chooseBuyItem(3);
-  increaseBuyingItemCount(5);
-  buy();
-  toast("点击: 山楂");
-  chooseBuyItem(4);
-  increaseBuyingItemCount(5);
-  buy();
-  exitShop();
+  toast("水果商人");
 
   right();
   up();

@@ -7,7 +7,7 @@ console.log("免费好礼");
 click(86, 458);
 sleep(10000);
 
-for (var count = 1; count <= 2; count++) {
+for (var count = 1; count <= 3; count++) {
   console.log("观看广告");
   click(812, 498);
   sleep(2 * 60 * 1000);
@@ -19,10 +19,10 @@ for (var count = 1; count <= 2; count++) {
 
 console.log("复制序号");
 click(830, 569);
-sleep(1000);
+sleep(2000);
 
 console.log("关闭窗口");
-click(749, 70);
+click(949, 70);
 sleep(2000);
 
 console.log("菜单");

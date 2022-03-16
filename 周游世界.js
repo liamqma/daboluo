@@ -687,7 +687,7 @@ function chengDuDaoEMeiShan() {
   right();
   down();
   right(5);
-  down(15);
+  down(16);
 
   toast("去峨眉山");
   left(10);
@@ -698,6 +698,7 @@ function chengDuDaoEMeiShan() {
 
 function eMeiShan() {
   click(433, 813);
+  sleep(3000);
   down(2);
   right();
   down(10);
@@ -726,15 +727,15 @@ function eMeiShan() {
   left();
   up(2);
   click(1392, 243);
+  sleep(3000);
   waitForMapChange();
   toast("到成都了");
 }
 
 function chengDuDaoFengMingJi() {
   up(3);
-  right(10);
-  right(5);
-  up(13);
+  right(16);
+  up(14);
   right(2);
   waitForMapChange();
   toast("到凤鸣集了");

@@ -191,6 +191,16 @@ function youZhou() {
   left(9);
   up(3);
   toast("少一段");
+  choosePeople(2);
+  clickOnButtonUnderTheDialog();
+  toast("烧刀子");
+  chooseBuyItem(1);
+  increaseBuyingItemCount(3);
+  toast("九酝春");
+  chooseBuyItem(3);
+  increaseBuyingItemCount(5);
+  buy();
+  exitShop();
   down(2);
   left();
 

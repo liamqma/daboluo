@@ -679,7 +679,7 @@ function qingChengShanDaoChengDu() {
   toast("到成都了");
 }
 
-function chengDuDaoFengMingJi() {
+function chengDuDaoEMeiShan() {
   click(1413, 812);
   sleep(3000);
   right(12);
@@ -688,6 +688,51 @@ function chengDuDaoFengMingJi() {
   down();
   right(5);
   down(15);
+
+  toast("去峨眉山");
+  left(10);
+  down(3);
+  waitForMapChange();
+  toast("到峨眉山");
+}
+
+function eMeiShan() {
+  click(433, 813);
+  down(2);
+  right();
+  down(10);
+  left(2);
+  down(10);
+  left(2);
+
+  toast("胡掌柜");
+  choosePeople(2);
+  toast("买卖");
+  clickOnButtonUnderTheDialog();
+  toast("竹叶青");
+  chooseBuyItem(3);
+  increaseBuyingItemCount(5);
+  buy();
+  toast("九酝春");
+  chooseBuyItem(4);
+  increaseBuyingItemCount(5);
+  buy();
+  exitShop();
+
+  right(2);
+  up(10);
+  right(2);
+  up(10);
+  left();
+  up(2);
+  click(1392, 243);
+  waitForMapChange();
+  toast("到成都了");
+}
+
+function chengDuDaoFengMingJi() {
+  up(3);
+  right(10);
   right(5);
   up(13);
   right(2);
@@ -1277,6 +1322,8 @@ const maps = [
   qingChengShanDaoDaXueShan,
   daXueShan,
   qingChengShanDaoChengDu,
+  chengDuDaoEMeiShan,
+  eMeiShan,
   chengDuDaoFengMingJi,
   fengMingJiDaoLongQuanZhen,
   longQuan,

@@ -565,9 +565,9 @@ function chengDu() {
   choosePeople(2);
   toast("买卖");
   clickOnButtonUnderTheDialog();
-  toast("泸州老窖");
-  chooseBuyItem(3);
-  increaseBuyingItemCount(3);
+  toast("剑南春");
+  chooseBuyItem(2);
+  increaseBuyingItemCount(2);
   buy();
   exitShop();
   right();

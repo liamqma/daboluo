@@ -1,6 +1,6 @@
 {
-    "name": "烟雨江湖脚本",
-    "main": "周游世界.js",
+    "name": "大菠萝脚本",
+    "main": "index.js",
     "ignore": [
         "build",
         "README.md",

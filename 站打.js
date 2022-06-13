@@ -37,9 +37,10 @@ var numAlreadyDone = 1;
 
 while (true) {
   firstSkill();
-  attack(8000);
+  attack(24000);
+  secondSkill();
   numAlreadyDone++;
-  if (numAlreadyDone % 20 === 0) {
+  if (numAlreadyDone % 5 === 0) {
     heXue();
   }
 }

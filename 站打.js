@@ -10,8 +10,9 @@ var numAlreadyDone = 1;
 
 while (true) {
   firstSkill();
-  attack(24000);
   secondSkill();
+  thirdSkill();
+  attack(24000);
   numAlreadyDone++;
   if (numAlreadyDone % 5 === 0) {
     heXue();

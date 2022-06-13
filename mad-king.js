@@ -5,6 +5,11 @@ var firstSkill = util.firstSkill;
 var secondSkill = util.secondSkill;
 var thirdSkill = util.thirdSkill;
 var fourthSkill = util.fourthSkill;
+var northEast = util.northEast;
+var northWest = util.northWest;
+var southEast = util.southEast;
+var southWest = util.southWest;
+var jianDongXi = util.jianDongXi;
 
 while (true) {
   swipe(200, 800, 300, 700, 1000);
@@ -14,20 +19,23 @@ while (true) {
 
   toast("enter");
   click(1695, 860);
-  sleep(15000);
+  sleep(20000);
 
   toast("快进");
   click(1845, 70);
   sleep(1000);
 
-  swipe(200, 800, 300, 700, 7500);
+  northEast(6000);
 
   heXue();
   for (var i = 0; i < 3; i++) {
     firstSkill();
     secondSkill();
+    thirdSkill();
     attack(24000);
   }
+
+  jianDongXi();
 
   toast("退出");
   click(1440, 230);

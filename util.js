@@ -33,6 +33,33 @@ function fourthSkill() {
   sleep(500);
 }
 
+function northEast(time) {
+  swipe(200, 800, 300, 700, time);
+}
+
+function northWest(time) {
+  swipe(200, 800, 100, 700, time);
+}
+
+function southEast(time) {
+  swipe(200, 800, 300, 900, time);
+}
+
+function southWest(time) {
+  swipe(200, 800, 100, 900, time);
+}
+
+function jianDongXi() {
+  var time = 1000;
+  toast("捡东西");
+  southWest(time);
+  northEast(2 * time);
+  southWest(time);
+  northWest(time);
+  southEast(2 * time);
+  sleep(500);
+}
+
 module.exports = {
   heXue: heXue,
   attack: attack,
@@ -40,4 +67,9 @@ module.exports = {
   secondSkill: secondSkill,
   thirdSkill: thirdSkill,
   fourthSkill: fourthSkill,
+  northEast: northEast,
+  northWest: northWest,
+  southEast: southEast,
+  southWest: southWest,
+  jianDongXi: jianDongXi,
 };

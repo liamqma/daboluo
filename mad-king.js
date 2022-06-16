@@ -5,10 +5,10 @@ var firstSkill = util.firstSkill;
 var secondSkill = util.secondSkill;
 var thirdSkill = util.thirdSkill;
 var fourthSkill = util.fourthSkill;
-var northEast = util.northEast;
-var northWest = util.northWest;
-var southEast = util.southEast;
-var southWest = util.southWest;
+var topRight = util.topRight;
+var topLeft = util.topLeft;
+var bottomRight = util.bottomRight;
+var bottomLeft = util.bottomLeft;
 var jianDongXi = util.jianDongXi;
 
 while (true) {
@@ -25,7 +25,7 @@ while (true) {
   click(1845, 70);
   sleep(1000);
 
-  northEast(5000);
+  topRight(5000);
 
   heXue();
   for (var i = 0; i < 2; i++) {

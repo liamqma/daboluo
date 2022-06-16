@@ -19,16 +19,16 @@ while (true) {
 
   toast("enter");
   click(1695, 860);
-  sleep(20000);
+  sleep(15000);
 
   toast("快进");
   click(1845, 70);
   sleep(1000);
 
-  northEast(6000);
+  northEast(5000);
 
   heXue();
-  for (var i = 0; i < 3; i++) {
+  for (var i = 0; i < 2; i++) {
     firstSkill();
     secondSkill();
     thirdSkill();

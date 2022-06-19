@@ -79,6 +79,34 @@ function yuanDiZou(time) {
   }
 }
 
+function waitForImage(img, interval, maxRetry, options) {
+  if (!interval) interval = 1000;
+  if (!maxRetry) maxRetry = 99;
+  if (!options) options = { threshold: 0.7 };
+  for (var count = 1; count <= maxRetry; count++) {
+    var p = findImage(captureScreen(), img, options);
+    if (p) return p;
+    sleep(interval);
+  }
+  return null;
+}
+
+function waitForImages(images, interval, maxRetry, options) {
+  if (!interval) interval = 1000;
+  if (!maxRetry) maxRetry = 99;
+  if (!options) options = { threshold: 0.7 };
+  for (var count = 1; count <= maxRetry; count++) {
+    var screenshot = captureScreen();
+    for (var i = 0; i < images.length; i++) {
+      var img = images[i];
+      var p = findImage(screenshot, img, options);
+      if (p) return { p: p, i: i };
+    }
+    sleep(interval);
+  }
+  return null;
+}
+
 module.exports = {
   heXue: heXue,
   attack: attack,
@@ -92,4 +120,6 @@ module.exports = {
   bottomLeft: bottomLeft,
   jianDongXi: jianDongXi,
   yuanDiZou: yuanDiZou,
+  waitForImage: waitForImage,
+  waitForImages: waitForImages,
 };

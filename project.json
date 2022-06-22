@@ -1,6 +1,6 @@
 {
     "name": "大菠萝脚本",
-    "main": "index.js",
+    "main": "游走.js",
     "ignore": [
         "build",
         "README.md",

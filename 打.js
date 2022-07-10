@@ -18,8 +18,7 @@ while (true) {
   firstSkill();
   secondSkill();
   thirdSkill();
-  sleep(20000);
-  yuanDiZou(2000);
+  attack(5000);
   numAlreadyDone++;
   if (numAlreadyDone % 5 === 0) {
     heXue();

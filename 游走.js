@@ -20,11 +20,18 @@ var waitForImage = util.waitForImage;
 
 var numAlreadyDone = 1;
 var time = 5000;
+var lastDirection = null;
+
+function getRandom(exclude) {
+  var nums = [0, 1, 2, 3].filter((num) => num != exclude);
+  return nums[Math.floor(Math.random() * nums.length)];
+}
 
 while (true) {
   var p = waitForImage(img60, 500, 5, { region: [400, 40, 900, 100] });
   if (p) {
     toast("有怪物");
+    lastDirection = null;
     firstSkill();
     secondSkill();
     thirdSkill();
@@ -32,12 +39,13 @@ while (true) {
     attack(time);
   } else {
     toast("没有怪物");
-    var random = Math.random();
-    if (random > 0.75) {
+    var random = getRandom(lastDirection);
+    lastDirection = random;
+    if (random === 0) {
       bottomLeft(time);
-    } else if (random > 0.5) {
+    } else if (random === 1) {
       topRight(time);
-    } else if (random > 0.25) {
+    } else if (random === 2) {
       topLeft(time);
     } else {
       bottomRight(time);
